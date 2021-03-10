@@ -125,16 +125,15 @@ button:focus,
 
 .page-header {
   display: flex;
-  align-items: stretch;
+  justify-content: space-around;
   width: auto;
   margin: auto;
   padding: 20px;
   background-image: linear-gradient(#ceb4ca, #8fcada);
 }
 
-.page-header__item {
-  flex: 0 0 200px;
-  padding: 0 150px;
+.logo {
+  flex-shrink: 0;
 }
 
 .page-header__item:last-child {
@@ -144,6 +143,7 @@ button:focus,
 
 .navigation-list li {
   display: inline-block;
+  flex-wrap: wrap;
   margin-left: 15px;
 }
 
