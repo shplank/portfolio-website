@@ -126,10 +126,10 @@ button:focus,
 
 .page-header {
   display: flex;
+  align-items: stretch;
   width: auto;
   margin: auto;
   padding: 20px;
-  justify-content: space-around;
   background-image: linear-gradient(#ceb4ca, #8fcada);
 }
 

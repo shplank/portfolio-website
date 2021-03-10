@@ -138,11 +138,12 @@ button:focus,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   width: auto;
   margin: auto;
   padding: 20px;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ceb4ca), to(#8fcada));
   background-image: linear-gradient(#ceb4ca, #8fcada);
 }
