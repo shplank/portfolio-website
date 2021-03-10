@@ -140,8 +140,8 @@ button:focus,
   display: -ms-flexbox;
   display: flex;
   width: auto;
-  margin: 0 20px;
-  padding: 20px;
+  margin: auto;
+  padding: 20px 40px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ceb4ca), to(#8fcada));
   background-image: linear-gradient(#ceb4ca, #8fcada);
 }
@@ -229,6 +229,9 @@ div.hidden {
   -ms-grid-columns: 300px 20px 300px 20px 300px;
   grid-template-columns: 300px 300px 300px;
   grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects__item {
@@ -244,11 +247,14 @@ div.hidden {
 }
 
 .about {
-  margin-left: 100px;
-  margin-top: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.about-graphics {
+  margin-left: 100px;
+  margin-top: 50px;
 }
 
 .experience-table {
@@ -364,6 +370,10 @@ hr {
     width: 100px;
   }
 
+  .profile-picture {
+    width: 100px;
+  }
+
   .sun {
     width: 100px;
   }
@@ -386,6 +396,10 @@ hr {
   }
 
   .profile__portrait {
+    width: 150px;
+  }
+
+  .profile-picture {
     width: 150px;
   }
 

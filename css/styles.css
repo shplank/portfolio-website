@@ -127,8 +127,8 @@ button:focus,
 .page-header {
   display: flex;
   width: auto;
-  margin: 0 20px;
-  padding: 20px;
+  margin: auto;
+  padding: 20px 40px;
   background-image: linear-gradient(#ceb4ca, #8fcada);
 }
 
@@ -200,6 +200,7 @@ div.hidden {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-gap: 20px;
+  justify-content: center;
 }
 
 .projects__item {
@@ -215,9 +216,12 @@ div.hidden {
 }
 
 .about {
+  justify-content: center;
+}
+
+.about-graphics {
   margin-left: 100px;
   margin-top: 50px;
-  justify-content: center;
 }
 
 .experience-table {
@@ -301,6 +305,10 @@ hr {
     width: 100px;
   }
 
+  .profile-picture {
+    width: 100px;
+  }
+
   .sun {
     width: 100px;
   }
@@ -322,6 +330,10 @@ hr {
   }
 
   .profile__portrait {
+    width: 150px;
+  }
+
+  .profile-picture {
     width: 150px;
   }
 
