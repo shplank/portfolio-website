@@ -130,7 +130,7 @@ button:focus,
 }
 
 .container {
-  max-width: auto;
+  max-width: 1400px;
   min-width: 400px;
   margin: 0 auto;
 }
@@ -139,8 +139,6 @@ button:focus,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: auto;
   margin: auto;
   padding: 20px;
@@ -162,13 +160,16 @@ button:focus,
 
 .navigation-list li {
   display: inline-block;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 20px;
 }
 
 .general {
-  max-width: auto;
+  max-width: 1080px;
   margin: 0 auto;
   text-align: center;
 }
