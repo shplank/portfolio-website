@@ -216,6 +216,7 @@ div.hidden {
   width: 800px;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 .about-text {
@@ -319,7 +320,7 @@ hr {
   }
 
   .profile-picture {
-    width: 100px;
+    width: 200px;
   }
 
   .sun {
@@ -351,7 +352,7 @@ hr {
   }
 
   .profile-picture {
-    width: 150px;
+    width: 250px;
   }
 
   .sun {
