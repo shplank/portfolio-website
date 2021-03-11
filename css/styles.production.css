@@ -387,13 +387,14 @@ hr {
 
 @media all and (max-width: 500px) {
   .projects {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 300px;
+    grid-template-columns: 300px;
   }
 
   .about {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    width: 400px;
   }
 
   .container {
@@ -418,10 +419,15 @@ hr {
 
   .sun {
     width: 50px;
+    position: relative;
+    left: 100px;
+    top: -100px;
   }
 
   .cloud {
     width: 50px;
+    position: relative;
+    top: -100px;
   }
 
   .mountain {
@@ -433,8 +439,8 @@ hr {
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .projects {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 300px 20px 300px;
+    grid-template-columns: 300px 300px;
   }
 
   .about {
