@@ -202,8 +202,9 @@ button:focus,
 
 .profile {
   max-width: 750px;
-  height: 205px;
+  height: auto;
   margin: auto;
+  padding: 10px;
   text-align: left;
 }
 
@@ -402,6 +403,13 @@ hr {
     height: 60px;
   }
 
+  .profile {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+  }
+
   .profile__portrait {
     width: 100px;
   }
@@ -428,16 +436,16 @@ hr {
   }
 }
 
-/* below sets adjustments for screens 500-750px */
+/* below sets adjustments for screens 500-800px */
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 500px) and (max-width: 800px) {
   .projects {
     -ms-grid-columns: 300px 20px 300px;
     grid-template-columns: 300px 300px;
   }
 
   .container {
-    max-width: 750px;
+    max-width: 800px;
     min-width: 500px;
     margin: 0 auto;
   }
@@ -448,7 +456,10 @@ hr {
   }
 
   .profile {
-    max-width: 500px;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
   }
 
   .profile__portrait {
@@ -472,7 +483,7 @@ hr {
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 800px) {
   /* shared code */
   .projects {
     grid-gap: 10px;
@@ -480,7 +491,7 @@ hr {
 
   .about {
     display: block;
-    width: 400px;
+    width: 350px;
     text-align: center;
     margin: auto;
   }
