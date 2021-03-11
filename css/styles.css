@@ -228,7 +228,7 @@ div.hidden {
   grid-row: 2 / span 3;
   grid-column: 2 / span 2;
   border-radius: 20%;
-  justify-content: center;
+  padding: 10px;
 }
 
 .experience-table {
@@ -308,11 +308,15 @@ hr {
 
 @media all and (max-width: 500px) {
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: 300px;
   }
 
   .about {
     grid-template-columns: 1fr;
+  }
+
+  .profile {
+    max-width: 400px;
   }
 
   .profile__portrait {
@@ -340,11 +344,16 @@ hr {
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .projects {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 300px;
   }
 
   .about {
     grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .profile {
+    max-width: 650px;
   }
 
   .profile__portrait {
