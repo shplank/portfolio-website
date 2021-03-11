@@ -224,7 +224,7 @@ div.hidden {
   grid-column: 1 / span 2;
 }
 
-.profile-picture img {
+.profile-picture {
   width: 300px;
   grid-row: 2 / span 3;
   grid-column: 2 / span 2;
@@ -321,7 +321,7 @@ hr {
     margin: 0 auto;
   }
 
-  .logo header {
+  .logo {
     width: 100px;
     height: 50px;
   }
@@ -370,7 +370,7 @@ hr {
     margin: 0 auto;
   }
 
-  .logo header {
+  .logo {
     width: 150px;
     height: 75px;
   }
