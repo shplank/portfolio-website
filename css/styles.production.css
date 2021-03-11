@@ -243,9 +243,10 @@ div.hidden {
 .about {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 400px 20px 400px;
-  grid-template-columns: 400px 400px;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  width: 800px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -378,7 +379,7 @@ hr {
   margin: 15px;
 }
 
-/* below sets projects grid to 1 column for screens <500px */
+/* below sets adjustments for screens <500px */
 
 @media all and (max-width: 500px) {
   .projects {
@@ -412,7 +413,7 @@ hr {
   }
 }
 
-/* below sets projects grid to 2 columns for screens 500-750px */
+/* below sets adjustments for screens 500-750px */
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .projects {
@@ -449,6 +450,11 @@ hr {
 @media all and (max-width: 750px) {
   /* shared code */
   .projects {
+    grid-gap: 10px;
+  }
+
+  .about {
+    width: 400px;
     grid-gap: 10px;
   }
 
