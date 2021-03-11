@@ -255,7 +255,6 @@ div.hidden {
 
 .sun {
   width: 200px;
-  margin-left: 200px;
   position: relative;
   animation: rotation 60s infinite linear;
 }
@@ -272,7 +271,6 @@ div.hidden {
 
 .cloud {
   width: 200px;
-  margin-left: 200px;
   position: relative;
   top: -100px;
   animation: 60s cloud-move infinite alternate linear;
