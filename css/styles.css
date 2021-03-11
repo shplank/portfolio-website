@@ -332,7 +332,6 @@ hr {
 
   .profile-picture {
     width: 150px;
-    padding: auto;
   }
 
   .sun {
@@ -353,9 +352,9 @@ hr {
   }
 }
 
-/* below sets adjustments for screens 500-750px */
+/* below sets adjustments for screens 500-800px */
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 500px) and (max-width: 800px) {
   .projects {
     grid-template-columns: 300px 300px;
   }
@@ -366,7 +365,7 @@ hr {
   }
 
   .container {
-    max-width: 750px;
+    max-width: 800px;
     min-width: 500px;
     margin: 0 auto;
   }
@@ -376,13 +375,16 @@ hr {
     height: 75px;
   }
 
+  .profile {
+    max-width: 500px;
+  }
+
   .profile__portrait {
     width: 150px;
   }
 
   .profile-picture {
     width: 225px;
-    padding: auto;
   }
 
   .sun {
@@ -398,7 +400,7 @@ hr {
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 800px) {
   /* shared code */
   .projects {
     grid-gap: 10px;
