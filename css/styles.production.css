@@ -274,7 +274,7 @@ div.hidden {
   -ms-grid-column-span: 2;
   grid-column: 2 / span 2;
   border-radius: 20%;
-  padding: 0 10px;
+  padding-left: 50px;
 }
 
 .experience-table {
@@ -291,6 +291,11 @@ div.hidden {
 .resume-button {
   -ms-grid-row: 3;
       grid-row-start: 3;
+}
+
+.mountain {
+  width: 800px;
+  position: static;
 }
 
 @-webkit-keyframes rotation {
@@ -320,6 +325,8 @@ div.hidden {
 .sun {
   width: 200px;
   position: relative;
+  top: -100px;
+  left: 200px;
   -webkit-animation: rotation 60s infinite linear;
           animation: rotation 60s infinite linear;
 }
@@ -351,15 +358,8 @@ div.hidden {
 .cloud {
   width: 200px;
   position: relative;
-  top: -100px;
   -webkit-animation: 60s cloud-move infinite alternate linear;
           animation: 60s cloud-move infinite alternate linear;
-}
-
-.mountain {
-  width: 800px;
-  position: relative;
-  top: -100px;
 }
 
 .message {
@@ -410,6 +410,7 @@ hr {
 
   .profile-picture {
     width: 150px;
+    padding: auto;
   }
 
   .sun {
@@ -453,6 +454,7 @@ hr {
 
   .profile-picture {
     width: 225px;
+    padding: auto;
   }
 
   .sun {
