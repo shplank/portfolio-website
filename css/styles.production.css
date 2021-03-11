@@ -243,8 +243,8 @@ div.hidden {
 .about {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 20px auto;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: 400px 20px 400px;
+  grid-template-columns: 400px 400px;
   grid-gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
