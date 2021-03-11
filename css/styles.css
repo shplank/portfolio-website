@@ -228,13 +228,13 @@ div.hidden {
   grid-row: 2 / span 3;
   grid-column: 2 / span 2;
   border-radius: 20%;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .experience-table {
   margin: auto;
   border: 2px solid var(--dark-grey);
-  padding: 10px;
+  padding: 20px 10px;
   width: 300px;
   text-align: left;
   background-color: var(--quaternary-color);
@@ -315,8 +315,8 @@ hr {
     grid-template-columns: 1fr;
   }
 
-  .profile {
-    max-width: 400px;
+  .container {
+    max-width: 90%;
   }
 
   .profile__portrait {
@@ -352,8 +352,8 @@ hr {
     max-width: 400px;
   }
 
-  .profile {
-    max-width: 650px;
+  .container {
+    max-width: 90%;
   }
 
   .profile__portrait {
