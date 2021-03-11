@@ -309,6 +309,10 @@ hr {
     grid-template-columns: 1fr;
   }
 
+  .about {
+    grid-template-columns: 1fr;
+  }
+
   .profile__portrait {
     width: 100px;
   }
@@ -335,6 +339,10 @@ hr {
 @media all and (min-width: 500px) and (max-width: 750px) {
   .projects {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
   }
 
   .profile__portrait {

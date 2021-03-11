@@ -386,6 +386,11 @@ hr {
     grid-template-columns: 1fr;
   }
 
+  .about {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .profile__portrait {
     width: 100px;
   }
@@ -413,6 +418,11 @@ hr {
   .projects {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .profile__portrait {
