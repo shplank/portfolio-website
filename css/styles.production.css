@@ -385,7 +385,7 @@ hr {
 
 /* below sets adjustments for screens <500px */
 
-@media all and (min-width: 200px) and (max-width: 500px) {
+@media all and (max-width: 500px) {
   .projects {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -397,7 +397,11 @@ hr {
   }
 
   .container {
-    max-width: 90%;
+    max-width: auto;
+  }
+
+  .logo {
+    width: 100px;
   }
 
   .profile__portrait {
@@ -436,7 +440,11 @@ hr {
   }
 
   .container {
-    max-width: 90%;
+    max-width: auto;
+  }
+
+  .logo {
+    width: 150px;
   }
 
   .profile__portrait {
@@ -474,4 +482,4 @@ hr {
   h1 {
     font-size: 24px;
   }
-  
+}
