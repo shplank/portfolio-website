@@ -340,25 +340,10 @@ hr {
 
   .sun {
     width: 50px;
-    position: relative;
-    left: 100px;
-  }
-
-  @keyframes cloud-move-least {
-    from {
-      transform: translate(0, 50px);
-    }
-
-    to {
-      transform: translate(200px, 50px);
-    }
   }
 
   .cloud {
     width: 50px;
-    position: relative;
-    left: -100px;
-    animation: 60s cloud-move-least infinite alternate linear;
   }
 
   .mountain {
@@ -401,25 +386,10 @@ hr {
 
   .sun {
     width: 100px;
-    position: relative;
-    left: 200px;
-  }
-
-  @keyframes cloud-move-less {
-    from {
-      transform: translate(0, 50px);
-    }
-
-    to {
-      transform: translate(400px, 50px);
-    }
   }
 
   .cloud {
     width: 100px;
-    position: relative;
-    left: -200px;
-    animation: 60s cloud-move-less infinite alternate linear;
   }
 
   .mountain {
@@ -442,5 +412,11 @@ hr {
 
   h1 {
     font-size: 24px;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 1.6;
   }
 }
