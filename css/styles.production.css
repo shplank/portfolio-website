@@ -425,7 +425,7 @@ hr {
     left: 100px;
   }
 
-  @-webkit-keyframes cloud-move {
+  @-webkit-keyframes cloud-move-least {
     from {
       -webkit-transform: translate(0, 50px);
               transform: translate(0, 50px);
@@ -437,7 +437,7 @@ hr {
     }
   }
 
-  @keyframes cloud-move {
+  @keyframes cloud-move-least {
     from {
       -webkit-transform: translate(0, 50px);
               transform: translate(0, 50px);
@@ -453,6 +453,8 @@ hr {
     width: 50px;
     position: relative;
     left: -100px;
+    -webkit-animation: 60s cloud-move-least infinite alternate linear;
+            animation: 60s cloud-move-least infinite alternate linear;
   }
 
   .mountain {
@@ -500,7 +502,7 @@ hr {
     left: 200px;
   }
 
-  @-webkit-keyframes cloud-move {
+  @-webkit-keyframes cloud-move-less {
     from {
       -webkit-transform: translate(0, 50px);
               transform: translate(0, 50px);
@@ -512,7 +514,7 @@ hr {
     }
   }
 
-  @keyframes cloud-move {
+  @keyframes cloud-move-less {
     from {
       -webkit-transform: translate(0, 50px);
               transform: translate(0, 50px);
@@ -528,6 +530,8 @@ hr {
     width: 100px;
     position: relative;
     left: -200px;
+    -webkit-animation: 60s cloud-move-less infinite alternate linear;
+            animation: 60s cloud-move-less infinite alternate linear;
   }
 
   .mountain {
