@@ -186,6 +186,7 @@ button:focus,
   border-radius: 50%;
   width: 200px;
   height: auto;
+  padding-top: 20px;
   margin-right: 40px;
   transition: all ease-in-out 0.4s;
 }
@@ -245,6 +246,10 @@ div.hidden {
 
 .resume-button {
   grid-row-start: 3;
+}
+
+.animated-pics {
+  width: 800px;
 }
 
 .mountain {
@@ -338,6 +343,10 @@ hr {
     width: 150px;
   }
 
+  .animated-pics {
+    width: 200px;
+  }
+
   .sun {
     width: 50px;
   }
@@ -382,6 +391,10 @@ hr {
 
   .profile-picture {
     width: 225px;
+  }
+
+  .animated-pics {
+    width: 400px;
   }
 
   .sun {
