@@ -19,7 +19,7 @@ Colors used
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -110,8 +110,7 @@ button,
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
 
   -webkit-transition-duration: 0.4s;
-
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
   -webkit-transition-property: opacity;
   transition-property: opacity;
 }
@@ -148,26 +147,26 @@ button:focus,
 
 .logo {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
 .navigation-list li {
   display: inline-block;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: 15px;
 }
 
@@ -184,8 +183,8 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -221,7 +220,7 @@ button:focus,
 
 .profile__portrait:hover {
   -webkit-box-shadow: 4px 6px rgba(0, 0, 0, 0.3);
-          box-shadow: 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 div.hidden {
@@ -235,8 +234,8 @@ div.hidden {
   grid-template-columns: 300px 300px 300px;
   grid-gap: 20px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .projects__item {
@@ -253,11 +252,11 @@ div.hidden {
   grid-gap: 20px;
   width: 800px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: auto;
 }
 
@@ -277,8 +276,8 @@ div.hidden {
   grid-column: 2 / span 2;
   border-radius: 20%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .experience-table {
@@ -289,12 +288,12 @@ div.hidden {
   text-align: left;
   background-color: var(--quaternary-color);
   -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
 }
 
 .resume-button {
   -ms-grid-row: 3;
-      grid-row-start: 3;
+  grid-row-start: 3;
 }
 
 .animated-pics {
@@ -310,55 +309,55 @@ div.hidden {
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
     -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
 @keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
     -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
 .sun {
   width: 200px;
   position: relative;
-  -webkit-animation: rotation 60s infinite linear;
-          animation: rotation 60s infinite linear;
+  -webkit-animation: rotation 45s infinite linear;
+  animation: rotation 45s infinite linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(800px, 50px);
-            transform: translate(800px, 50px);
+    transform: translate(800px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(800px, 50px);
-            transform: translate(800px, 50px);
+    transform: translate(800px, 50px);
   }
 }
 
@@ -367,7 +366,7 @@ div.hidden {
   position: relative;
   left: -400px;
   -webkit-animation: 60s cloud-move infinite alternate linear;
-          animation: 60s cloud-move infinite alternate linear;
+  animation: 60s cloud-move infinite alternate linear;
 }
 
 .message {

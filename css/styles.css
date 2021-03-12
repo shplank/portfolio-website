@@ -271,7 +271,7 @@ div.hidden {
 .sun {
   width: 200px;
   position: relative;
-  animation: rotation 60s infinite linear;
+  animation: rotation 45s infinite linear;
 }
 
 @keyframes cloud-move {
