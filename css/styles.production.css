@@ -334,31 +334,32 @@ div.hidden {
 
 @-webkit-keyframes cloud-move {
   from {
-    -webkit-transform: translate(-400px, 50px);
-            transform: translate(-400px, 50px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
 
   to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    -webkit-transform: translate(800px, 50px);
+            transform: translate(800px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
-    -webkit-transform: translate(-400px, 50px);
-            transform: translate(-400px, 50px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
 
   to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    -webkit-transform: translate(800px, 50px);
+            transform: translate(800px, 50px);
   }
 }
 
 .cloud {
   width: 200px;
   position: relative;
+  left: -400px;
   -webkit-animation: 60s cloud-move infinite alternate linear;
           animation: 60s cloud-move infinite alternate linear;
 }
