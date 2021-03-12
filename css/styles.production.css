@@ -299,6 +299,7 @@ div.hidden {
 
 .animated-pics {
   width: 800px;
+  margin: auto;
 }
 
 .mountain {
@@ -426,6 +427,7 @@ hr {
 
   .animated-pics {
     width: 200px;
+    margin: auto;
   }
 
   .sun {
@@ -477,6 +479,7 @@ hr {
 
   .animated-pics {
     width: 400px;
+    margin: auto;
   }
 
   .sun {
