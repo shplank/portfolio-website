@@ -124,6 +124,8 @@ button:focus,
   margin: 0 auto;
 }
 
+/* below is header styling */
+
 .page-header {
   display: flex;
   width: auto;
@@ -155,6 +157,8 @@ button:focus,
   text-align: center;
 }
 
+/* below is footer styling */
+
 .page-footer {
   clear: both;
   display: flex;
@@ -172,6 +176,8 @@ button:focus,
 .page-footer__item {
   display: inline-block;
 }
+
+/* below is home page content styling */
 
 .profile {
   max-width: 750px;
@@ -199,6 +205,8 @@ div.hidden {
   display: none;
 }
 
+/* below is work page content styling */
+
 .projects {
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -211,6 +219,8 @@ div.hidden {
   background-color: var(--quaternary-color);
   border: 2px solid var(--dark-grey);
 }
+
+/* below is about page content styling */
 
 .about {
   display: grid;
@@ -248,6 +258,8 @@ div.hidden {
   grid-row-start: 3;
 }
 
+/* below is about page animated picture stuff */
+
 .animated-pics {
   width: 800px;
   margin: auto;
@@ -280,7 +292,7 @@ div.hidden {
   }
 
   to {
-    transform: translate(800px, 50px);
+    transform: translate(600px, 50px);
   }
 }
 
@@ -290,6 +302,8 @@ div.hidden {
   left: -400px;
   animation: 60s cloud-move infinite alternate linear;
 }
+
+/* below is contact page content styling */
 
 .message {
   width: 300px;
