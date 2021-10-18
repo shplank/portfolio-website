@@ -8,6 +8,7 @@ Colors used
   --tertiary-color: #ceb4ca;
   --quaternary-color: #c7e5ed;
   --dark-grey: #707070;
+  --gold: #f4d03f;
 }
 
 * {
@@ -15,12 +16,13 @@ Colors used
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  background: linear-gradient(160deg, #8fcada, #f4d03f);
 }
 
 h1 {
@@ -46,7 +48,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 a:visited {
@@ -119,7 +121,7 @@ button:focus,
 }
 
 .container {
-  max-width: 1400px;
+  width: auto;
   min-width: 400px;
   margin: 0 auto;
 }
@@ -189,7 +191,7 @@ button:focus,
 
 .profile__portrait {
   float: left;
-  border-radius: 50%;
+  border-radius: 20%;
   width: 200px;
   height: auto;
   padding-top: 20px;
@@ -321,7 +323,12 @@ ul {
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
   margin: 15px;
 }
 
