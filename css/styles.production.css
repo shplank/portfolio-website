@@ -15,7 +15,6 @@ Colors used
   --tertiary-color: #ceb4ca;
   --quaternary-color: #c7e5ed;
   --dark-grey: #707070;
-  --gold: #f4d03f;
 }
 
 * {
@@ -30,8 +29,8 @@ body {
   line-height: 1.5;
   color: var(--primary-color);
   background-color: var(--secondary-color);
-  background: -o-linear-gradient(290deg, #8fcada, #f4d03f);
-  background: linear-gradient(160deg, #8fcada, #f4d03f);
+  background: -o-linear-gradient(290deg, #8fcada, #ceb4ca);
+  background: linear-gradient(160deg, #8fcada, #ceb4ca);
 }
 
 h1 {
