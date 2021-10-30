@@ -21,7 +21,6 @@ body {
   line-height: 1.5;
   color: var(--primary-color);
   background-color: var(--secondary-color);
-  background: linear-gradient(160deg, #8fcada, #ceb4ca);
 }
 
 h1 {
@@ -218,8 +217,8 @@ div.hidden {
   color: var(--primary-color);
   background-color: var(--quaternary-color);
   border: 2px solid var(--dark-grey);
-  border-radius: 5px;
-  padding: auto 5px;
+  border-radius: 4px;
+  padding: 8px;
 }
 
 .project-image {
