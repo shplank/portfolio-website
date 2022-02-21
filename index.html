@@ -16,7 +16,9 @@
 
 <body class="container">
     <header class="page-header">
-        <img src="img/Joe-Jordan-logo-transparent.png" alt="Joe Jordan logo" class="page-header__item logo">
+        <a href="index.html" role="menuitem">
+            <img src="img/Joe-Jordan-logo-transparent.png" alt="Joe Jordan logo" class="page-header__item logo">
+        </a>
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -28,9 +30,6 @@
                 <li role="presentation">
                     <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
                 </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
             </ul>
         </nav>
     </header>
@@ -38,18 +37,11 @@
     <main class="profile">
         <img class="profile__portrait" src="img/Me-2019.jpg" alt="photo of Joe smiling">
         <h1>Joe Jordan</h1>
-        <p>
-            I'm a <b>full-stack web developer</b> Based in California, soon to finish training through the <a href="https://careerfoundry.com/" target="_blank">CareerFoundry</a> program.
-        </p>
-        <div class="hidden">
-            <a href="#">Click the <strong>Mystery Link!</strong></a>
-            <button type="button">Press the <strong>Mystery Button!</strong></button>
-            <button class="button__secondary">Don't press <strong>This Button!</strong></button>
-        </div>
+        <p>I'm a <b>full-stack web developer</b> based in California and trained via the <a href="https://careerfoundry.com/" target="_blank">CareerFoundry</a> program.</p>
     </main>
     <hr />
     <footer class="page-footer">
-        <p>Find me on:</p>
+        <p>Look me up!</p>
         <div class="social-media">
             <ul class="links-list" role="menubar">
                 <li class="page-footer__item" role="presentation">
@@ -82,8 +74,35 @@
                 </li>
             </ul>
         </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
-</body>
+        <div>
+            <button type="button" id="contact-button">Contact Me</button>
+        </div>
 
+<!-- Below is the contact form modal -->
+
+        <div id="modal">
+            <form action="https://formsubmit.co/lankyjoe@gmail.com" method="POST" id="form-content">
+                <span class="close-button">&times;</span>
+                <p><b>Send me a message:</b></p>
+                <label class="standard-label" for="contact-name">Your name:</label>
+                    <br>
+                <input type="text" name="name" id="contact-name" width="200" required>
+                    <br>
+                <label class="standard-label" for="contact-email">Your e-mail:</label>
+                    <br>
+                <input type="email" name="email" id="contact-email" width="200"  required>
+                    <br>
+                <label class="standard-label" for="contact-message">Message (max. 250 characters): </label>
+                    <br>
+                <textarea type="text" name="message" maxlength="250" id="contact-message" width="200"  required></textarea>
+                    <br>
+                <button type="submit" id="send-button">Send</button>
+            </form>
+        </div>
+
+    </footer>
+
+</body>
+<script src="js/tota11y.min.js"></script>
+<script src="js/scripts.js"></script>
 </html>

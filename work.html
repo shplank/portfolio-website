@@ -15,7 +15,9 @@
 
 <body class="container">
     <header class="page-header">
-        <img src="img/Joe-Jordan-logo-transparent.png" alt="Joe Jordan logo" class="page-header__item logo">
+        <a href="index.html" role="menuitem">
+            <img src="img/Joe-Jordan-logo-transparent.png" alt="Joe Jordan logo" class="page-header__item logo">
+        </a>
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -26,9 +28,6 @@
                 </li>
                 <li role="presentation">
                     <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -42,7 +41,7 @@
                 <h2>Mooovies Angular App</h2>
                 <p>An app that allows users to browse and search a selection of films, built with Angular and Angular Material.</p>
                 <a href="https://shplank.github.io/Mooovies-Angular/" target="_blank">
-                    <img src="img/angular-mooovies.png" class="project-image" alt="Mooovies logo" width="200" height="200">
+                    <img src="img/cow-login.png" class="project-image" alt="Mooovies app login page" width="200" height="200">
                 </a>
                 <br>
                 <a href="https://github.com/shplank/Mooovies-Angular" target="_blank">See it on GitHub</a>
@@ -69,7 +68,7 @@
                 <h2>Mooovies React App</h2>
                 <p>An app that allows users to browse and search a selection of films, built with React and Redux.</p>
                 <a href="https://moooviesapp.netlify.app/" target="_blank">
-                    <img src="img/mooovies-react-sq.png" class="project-image" alt="Mooovies app login page" width="200" height="200">
+                    <img src="img/react-mooovies.png" class="project-image" alt="photo of Mooovies app" width="200" height="200">
                 </a>
                 <br>
                 <a href="https://github.com/shplank/Mooovies-client" target="_blank">See it on GitHub</a>
@@ -94,7 +93,7 @@
     </main>
     <hr />
     <footer class="page-footer">
-        <p>Find me on:</p>
+        <p>Look me up!</p>
         <div class="social-media">
             <ul class="links-list" role="menubar">
                 <li class="page-footer__item" role="presentation">
@@ -126,6 +125,31 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div>
+            <button type="button" id="contact-button">Contact Me</button>
+        </div>
+
+<!-- Below is the contact form modal -->
+
+        <div id="modal">
+            <form action="https://formsubmit.co/lankyjoe@gmail.com" method="POST" id="form-content">
+                <span class="close-button">&times;</span>
+                <p><b>Send me a message:</b></p>
+                <label class="standard-label" for="contact-name">Your name:</label>
+                    <br>
+                <input type="text" name="name" id="contact-name" width="200" required>
+                    <br>
+                <label class="standard-label" for="contact-email">Your e-mail:</label>
+                    <br>
+                <input type="email" name="email" id="contact-email" width="200"  required>
+                    <br>
+                <label class="standard-label" for="contact-message">Message (max. 250 characters): </label>
+                    <br>
+                <textarea type="text" name="message" maxlength="250" id="contact-message" width="200"  required></textarea>
+                    <br>
+                <button type="submit" id="send-button">Send</button>
+            </form>
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
