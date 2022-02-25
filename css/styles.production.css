@@ -368,7 +368,7 @@ div.hidden {
 .case-study {
   margin: 20px auto 12px;
   width: 300px;
-  height: 200px;
+  height: 300px;
   color: var(--primary-color);
   background-color: var(--quaternary-color);
   border: 2px solid var(--dark-grey);
