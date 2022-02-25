@@ -365,6 +365,10 @@ div.hidden {
   border-radius: 4px;
 }
 
+.case-study {
+  margin: 12px auto;
+}
+
 /* below is about page content styling */
 
 .about {
