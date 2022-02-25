@@ -368,7 +368,7 @@ div.hidden {
 .case-study {
   margin: 20px auto 12px;
   width: 300px;
-  height: 300px;
+  height: 280px;
   color: var(--primary-color);
   background-color: var(--quaternary-color);
   border: 2px solid var(--dark-grey);
@@ -378,6 +378,7 @@ div.hidden {
 
 .code-image {
   width: 260px;
+  margin-bottom: 8px;
   border-style: none;
   border-radius: 4px;
 }
