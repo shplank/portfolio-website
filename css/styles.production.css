@@ -11,9 +11,9 @@ Colors used
 
 :root {
   --primary-color: #000;
-  --secondary-color: #8fcada;
-  --tertiary-color: #ceb4ca;
-  --quaternary-color: #c7e5ed;
+  --secondary-color: #d9f0ff;
+  --tertiary-color: #f0dbf8;
+  --quaternary-color: #bfe2ff;
   --dark-grey: #707070;
 }
 
@@ -23,7 +23,7 @@ Colors used
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Sarabun", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -54,7 +54,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Sarabun", sans-serif;
+  letter-spacing: 1px;
 }
 
 a:visited {
@@ -144,20 +145,13 @@ button:focus,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   width: auto;
   margin: auto;
   padding: 20px 40px 10px;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ceb4ca),
-    to(#8fcada)
-  );
-  background-image: -o-linear-gradient(#ceb4ca, #8fcada);
-  background-image: linear-gradient(#ceb4ca, #8fcada);
+  z-index: 5;
 }
 
 .logo {
@@ -189,6 +183,45 @@ button:focus,
   width: auto;
   margin: 0 auto;
   text-align: center;
+}
+
+.switch {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 200px;
+  height: 100px;
+  background-color: #ccc;
+  -webkit-animation-name: color;
+  animation-name: color;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes color {
+  0% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: #aaa;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+@keyframes color {
+  0% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: #aaa;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
 
 /* below is footer styling */
@@ -283,6 +316,7 @@ hr {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 5%;
   width: 300px;
 }
 
@@ -315,8 +349,8 @@ hr {
   max-width: 750px;
   height: auto;
   margin: auto;
-  padding: 10px;
-  text-align: center;
+  padding: 100px 10px 10px;
+  text-align: left;
 }
 
 .profile__portrait {
@@ -339,6 +373,14 @@ div.hidden {
 }
 
 /* below is work page content styling */
+
+.work {
+  max-width: 750px;
+  height: auto;
+  margin: auto;
+  padding: 100px 10px 10px;
+  text-align: center;
+}
 
 .projects {
   display: -ms-grid;
@@ -408,7 +450,7 @@ div.hidden {
 }
 
 .profile-picture {
-  width: 300px;
+  width: 200px;
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2 / span 3;
@@ -426,7 +468,7 @@ div.hidden {
   margin: auto;
   border: 2px solid var(--dark-grey);
   padding: 20px 10px;
-  width: 300px;
+  width: 200px;
   text-align: left;
   background-color: var(--quaternary-color);
   grid-row: 2;
@@ -438,81 +480,6 @@ div.hidden {
   grid-row: 3;
   -ms-grid-row: 3;
   grid-row-start: 3;
-}
-
-/* below is about page animated picture stuff */
-
-.animated-pics {
-  width: 800px;
-  margin: auto;
-}
-
-.mountain {
-  width: 800px;
-  position: static;
-}
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-
-.sun {
-  width: 200px;
-  position: relative;
-  -webkit-animation: rotation 45s infinite linear;
-  animation: rotation 45s infinite linear;
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(600px, 50px);
-    transform: translate(600px, 50px);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(600px, 50px);
-    transform: translate(600px, 50px);
-  }
-}
-
-.cloud {
-  width: 200px;
-  position: relative;
-  left: -400px;
-  -webkit-animation: 60s cloud-move infinite alternate linear;
-  animation: 60s cloud-move infinite alternate linear;
 }
 
 /* below sets adjustments for screens <500px */
@@ -530,15 +497,27 @@ div.hidden {
   }
 
   .logo {
-    width: 120px;
-    height: 60px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .switch {
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .about-me,
+  .my-work {
+    width: 100px;
+    height: 50px;
   }
 
   .profile {
     width: 300px;
     height: auto;
     margin: auto;
-    padding: 10px;
   }
 
   .profile__portrait {
@@ -586,11 +565,23 @@ div.hidden {
     height: 80px;
   }
 
+  .switch {
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+  }
+
+  .about-me,
+  .my-work {
+    width: 120px;
+    height: 60px;
+  }
+
   .profile {
     width: 500px;
     height: auto;
     margin: auto;
-    padding: 10px;
   }
 
   .profile__portrait {

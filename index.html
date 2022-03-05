@@ -2,42 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Joe Jordan</title>
-    <link rel="shortcut icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <title>Joe Jordan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <!-- Below is everything that will appear on the home page -->
 
 <body class="container">
-    <header class="page-header">
-        <a href="index.html" role="menuitem">
-            <img src="img/Joe-Jordan-logo-transparent.png" alt="Joe Jordan logo" class="page-header__item logo">
+  <header class="page-header">
+    <a href="index.html" role="menuitem">
+      <img src="img/JJ-logo-no-bg.png" alt="Joe Jordan logo" class="page-header__item logo">
+    </a>
+    <nav class="main-navigation page-header__item">
+      <div class="switch">
+        <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">
+          <img class="about-me" src="img/about-me.png" alt="switch to work page">
         </a>
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">My Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </nav>
     <hr />
-    <main class="profile">
-        <img class="profile__portrait" src="img/Me-2019.jpg" alt="photo of Joe smiling">
-        <h1>Joe Jordan</h1>
-        <p>I'm a <b>full-stack web developer</b> based in California and trained via the <a href="https://careerfoundry.com/" target="_blank">CareerFoundry</a> program.</p>
+  </header>
+
+    <main class="profile animate__animated animate__fadeIn">
+        
+        <img class="profile__portrait" src="img/jjordan-faceshot.jpg" alt="photo of Joe smiling">
+        <p><b>full-stack web developer</b></p>
+        <div class="about">
+            <div class="about-text">
+              <h1>about me</h1>
+              <p>
+                I grew up in Southern California and developed a passion for creation at a young age. From my dad, I learned how to use tools and work with wood, and my mom encouraged me to read. Before long I was doing carpentry projects and writing stories, and later, making music.<br>
+                After high school I went to UC Santa Barbara as an English major, where my love of literature led me into what would become a long relationship with live theater. I acted, directed, wrote plays, built sets, and even helped run a small theater company in Hollywood for several years. It was tough to make a living in theater, so I decided to try something more reliable - teaching.<br>
+                After years of giving my all to being an amazing high school English teacher, I ended up stressed, exhausted, and frustrated about how difficult it was to do the job well. So I left. Not long after that, the Covid-19 pandemic hit and I decided to make one more career pivot. Learning to code has been daunting, but I love this weird combination of language and building and look forward to making lots of cool stuff.<br>
+                I'm a <b>full-stack web developer</b> based in California and trained via the <a href="https://careerfoundry.com/" target="_blank">CareerFoundry</a> program.
+              </p>
+            </div>
+            <img class="profile-picture" src="img/Joe-at-computer.jpg" alt="photo of Joe at work">
+            <table class="experience-table">
+              <thead>
+                <tr>
+                  <th>Skills</th>
+                  <th>Level of<br>Expertise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML</td>
+                  <td>Proficient</td>
+                </tr>
+                <tr>
+                  <td>CSS</td>
+                  <td>Proficient</td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                  <td>Proficient</td>
+                </tr>
+                <tr>
+                  <td>React</td>
+                  <td>Adept</td>
+                </tr>
+                <tr>
+                  <td>Angular</td>
+                  <td>Beginner</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="resume-button">
+              <a href="files/Jordan-Joe-Resume.pdf" class="button" target="blank" download>Download my résumé</a>
+            </div>
+          </div>
     </main>
     <hr />
     <footer class="page-footer">
@@ -90,27 +132,27 @@
 
 <!-- Below is the contact form modal -->
 
-        <div id="modal">
-            <form action="https://formsubmit.co/lankyjoe@gmail.com" method="POST" id="form-content">
-                <span class="close-button">&times;</span>
-                <p><b>Send me a message:</b></p>
-                <label class="standard-label" for="contact-name">Your name:</label>
-                    <br>
-                <input type="text" name="name" id="contact-name" width="200" required>
-                    <br>
-                <label class="standard-label" for="contact-email">Your e-mail:</label>
-                    <br>
-                <input type="email" name="email" id="contact-email" width="200"  required>
-                    <br>
-                <label class="standard-label" for="contact-message">Message (max. 250 characters): </label>
-                    <br>
-                <textarea type="text" name="message" maxlength="250" id="contact-message" width="200"  required></textarea>
-                    <br>
-                <button type="submit" id="send-button">Send</button>
-            </form>
-        </div>
+    <div id="modal">
+      <form action="https://formsubmit.co/lankyjoe@gmail.com" method="POST" id="form-content">
+        <span class="close-button">&times;</span>
+        <p><b>Send me a message:</b></p>
+        <label class="standard-label" for="contact-name">Your name:</label>
+          <br>
+        <input type="text" name="name" id="contact-name" width="200" required>
+          <br>
+        <label class="standard-label" for="contact-email">Your e-mail:</label>
+          <br>
+        <input type="email" name="email" id="contact-email" width="200"  required>
+          <br>
+        <label class="standard-label" for="contact-message">Message (max. 250 characters): </label>
+          <br>
+        <textarea type="text" name="message" maxlength="250" id="contact-message" width="200"  required></textarea>
+          <br>
+        <button type="submit" id="send-button">Send</button>
+      </form>
+    </div>
 
-    </footer>
+  </footer>
 
 </body>
 <script src="js/tota11y.min.js"></script>
