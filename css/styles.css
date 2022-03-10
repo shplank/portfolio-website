@@ -4,9 +4,9 @@ Colors used
 
 :root {
   --primary-color: #000;
-  --secondary-color: #d9f0ff;
-  --tertiary-color: #f0dbf8;
-  --quaternary-color: #bfe2ff;
+  --secondary-color: #eee;
+  --tertiary-color: #235fac;
+  --quaternary-color: #d3e8e5;
   --dark-grey: #707070;
 }
 
@@ -14,8 +14,12 @@ Colors used
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Sarabun", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -46,8 +50,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Sarabun", sans-serif;
-  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
 }
 
 a:visited {
@@ -72,36 +75,13 @@ a:active {
 button,
 .button {
   border: none;
-
-  /*  overwrites browser defaults and resets the border */
-
   display: inline-block;
   font-family: inherit;
-
-  /*  takes the font from the outer container */
-
-  background-color: var(--dark-grey);
-
-  /* styles the button's background color */
-
-  color: white;
-
-  /* styles the button's font color */
-
+  color: #000;
   text-decoration: none;
-
-  /* styles the button's text decoration */
-
   padding: 10px;
-
-  /* adds spacing to the button */
-
   margin: 20px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-
   transition-duration: 0.4s;
   transition-property: opacity;
 }
@@ -127,6 +107,11 @@ button:focus,
 
 /* below is header styling */
 
+.sidenav {
+  position: fixed;
+  margin: 40px;
+}
+
 .page-header {
   display: flex;
   position: fixed;
@@ -138,6 +123,8 @@ button:focus,
 }
 
 .logo {
+  max-width: 100px;
+  max-height: 100px;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -160,48 +147,17 @@ button:focus,
   text-align: center;
 }
 
-.switch {
-  position: fixed;
-  top: 24px;
-  right: 24px;
-  width: 200px;
-  height: 100px;
-  background-color: #ccc;
-  animation-name: color;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes color {
-  0% {
-    background-color: #ccc;
-  }
-  50% {
-    background-color: #aaa;
-  }
-  100% {
-    background-color: #ccc;
-  }
-}
-
 /* below is footer styling */
 
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .links-list li {
-  text-align: center;
-  padding: 0;
-  margin-right: 40px;
-  width: 30px;
+  justify-content: left;
+  padding-left: 0;
 }
 
 .page-footer__item {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
 }
 
 .message {
@@ -232,7 +188,8 @@ hr {
 /* contact button */
 
 #contact-button {
-  margin: 8px auto 20px;
+  margin: 8px auto 8px;
+  padding: 0;
 }
 
 /* modal background */
@@ -284,18 +241,23 @@ hr {
   margin-bottom: 8px;
 }
 
-/* below is home page content styling */
+/* below is splash page content styling */
+
+.splash {
+  display: block;
+  text-align: center;
+  margin: 300px auto;
+}
 
 .profile {
   max-width: 750px;
   height: auto;
   margin: auto;
   padding: 100px 10px 10px;
-  text-align: left;
 }
 
 .profile__portrait {
-  border-radius: 20%;
+  border-radius: 10%;
   width: 200px;
   height: auto;
   margin: 0 auto;
@@ -312,11 +274,11 @@ div.hidden {
 
 /* below is work page content styling */
 
-.work {
+#work {
   max-width: 750px;
   height: auto;
   margin: auto;
-  padding: 100px 10px 10px;
+  padding: 60px 10px;
   text-align: center;
 }
 
@@ -328,17 +290,76 @@ div.hidden {
 }
 
 .projects__item {
-  color: var(--primary-color);
-  background-color: var(--quaternary-color);
-  border: 2px solid var(--dark-grey);
-  border-radius: 4px;
-  padding: 8px;
+  position: relative;
 }
 
 .project-image {
+  width: 300px;
+  color: var(--primary-color);
+  background-color: var(--quaternary-color);
+  border: 2px solid var(--dark-grey);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.project-image:hover {
+  opacity: 30%;
+  -webkit-transition: all ease-in-out 0.4s;
+  -o-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.hidden-click {
+  display: none;
   width: 200px;
-  border-style: none;
-  border-radius: 4px;
+  height: 200px;
+  margin: auto;
+  color: var(--primary-color);
+  background-color: #fff;
+  border: 2px solid var(--dark-grey);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.project-image:hover + .hidden-click {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  -webkit-transition: all ease-in-out 0.4s;
+  -o-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+/* below is about page styling */
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.about-text {
+  grid-column: 1 / span 2;
+  text-align: left;
+}
+
+.experience-table {
+  margin: auto;
+  border: 2px solid var(--dark-grey);
+  padding: 20px 10px;
+  width: 200px;
+  text-align: left;
+  background-color: var(--quaternary-color);
+  grid-row-start: 2;
+}
+
+.resume-button {
+  grid-row-start: 3;
 }
 
 .case-study {
@@ -359,43 +380,280 @@ div.hidden {
   border-radius: 4px;
 }
 
-/* below is about page content styling */
+/* bubble animations */
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  width: 800px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+#circles {
+  z-index: -1;
 }
 
-.about-text {
-  grid-column: 1 / span 2;
+@keyframes circle1-move {
+  from {
+    transform: translate(4vw, 0);
+  }
+  to {
+    transform: translate(4vw, -3000px);
+  }
 }
 
-.profile-picture {
-  width: 200px;
-  grid-row: 2 / span 3;
-  grid-column: 2 / span 2;
-  border-radius: 20%;
-  justify-self: start;
-  align-self: start;
+.circle1 {
+  position: relative;
+  bottom: 0px;
+  animation: 28s circle1-move infinite linear;
 }
 
-.experience-table {
-  margin: auto;
-  border: 2px solid var(--dark-grey);
-  padding: 20px 10px;
-  width: 200px;
-  text-align: left;
-  background-color: var(--quaternary-color);
-  grid-row-start: 2;
+@keyframes circle2-move {
+  from {
+    transform: translate(8vw, 0);
+  }
+  to {
+    transform: translate(8vw, -3000px);
+  }
 }
 
-.resume-button {
-  grid-row-start: 3;
+.circle2 {
+  position: relative;
+  bottom: 0px;
+  animation: 17s circle2-move infinite linear;
+}
+
+@keyframes circle3-move {
+  from {
+    transform: translate(12vw, 0);
+  }
+  to {
+    transform: translate(12vw, -3000px);
+  }
+}
+
+.circle3 {
+  position: relative;
+  bottom: 0px;
+  animation: 25s circle3-move infinite linear;
+}
+
+@keyframes circle4-move {
+  from {
+    transform: translate(16vw, 0);
+  }
+  to {
+    transform: translate(16vw, -3000px);
+  }
+}
+
+.circle4 {
+  position: relative;
+  bottom: 0px;
+  animation: 20s circle4-move infinite linear;
+}
+
+@keyframes circle5-move {
+  from {
+    transform: translate(20vw, 0);
+  }
+  to {
+    transform: translate(20vw, -3000px);
+  }
+}
+
+.circle5 {
+  position: relative;
+  bottom: 0px;
+  animation: 31s circle5-move infinite linear;
+}
+
+@keyframes circle6-move {
+  from {
+    transform: translate(24vw, 0);
+  }
+  to {
+    transform: translate(24vw, -3000px);
+  }
+}
+
+.circle6 {
+  position: relative;
+  bottom: 0px;
+  animation: 23s circle6-move infinite linear;
+}
+
+@keyframes circle7-move {
+  from {
+    transform: translate(28vw, 0);
+  }
+  to {
+    transform: translate(28vw, -3000px);
+  }
+}
+
+.circle7 {
+  position: relative;
+  bottom: 0px;
+  animation: 16s circle7-move infinite linear;
+}
+
+@keyframes circle8-move {
+  from {
+    transform: translate(32vw, 0);
+  }
+  to {
+    transform: translate(32vw, -3000px);
+  }
+}
+
+.circle8 {
+  position: relative;
+  bottom: 0px;
+  animation: 26s circle8-move infinite linear;
+}
+
+@keyframes circle9-move {
+  from {
+    transform: translate(36vw, 0);
+  }
+  to {
+    transform: translate(36vw, -3000px);
+  }
+}
+
+.circle9 {
+  position: relative;
+  bottom: 0px;
+  animation: 19s circle9-move infinite linear;
+}
+
+@keyframes circle10-move {
+  from {
+    transform: translate(40vw, 0);
+  }
+  to {
+    transform: translate(40vw, -3000px);
+  }
+}
+
+.circle10 {
+  position: relative;
+  bottom: 0px;
+  animation: 14s circle10-move infinite linear;
+}
+
+@keyframes circle11-move {
+  from {
+    transform: translate(44vw, 0);
+  }
+  to {
+    transform: translate(44vw, -3000px);
+  }
+}
+
+.circle11 {
+  position: relative;
+  bottom: 0px;
+  animation: 22s circle11-move infinite linear;
+}
+
+@keyframes circle12-move {
+  from {
+    transform: translate(48vw, 0);
+  }
+  to {
+    transform: translate(48vw, -3000px);
+  }
+}
+
+.circle12 {
+  position: relative;
+  bottom: 0px;
+  animation: 29s circle12-move infinite linear;
+}
+
+@keyframes circle13-move {
+  from {
+    transform: translate(52vw, 0);
+  }
+  to {
+    transform: translate(52vw, -3000px);
+  }
+}
+
+.circle13 {
+  position: relative;
+  bottom: 0px;
+  animation: 18s circle13-move infinite linear;
+}
+
+@keyframes circle14-move {
+  from {
+    transform: translate(56vw, 0);
+  }
+  to {
+    transform: translate(56vw, -3000px);
+  }
+}
+
+.circle14 {
+  position: relative;
+  bottom: 0px;
+  animation: 24s circle14-move infinite linear;
+}
+
+@keyframes circle15-move {
+  from {
+    transform: translate(60vw, 0);
+  }
+  to {
+    transform: translate(60vw, -3000px);
+  }
+}
+
+.circle15 {
+  position: relative;
+  bottom: 0px;
+  animation: 15s circle15-move infinite linear;
+}
+
+@keyframes circle16-move {
+  from {
+    transform: translate(64vw, 0);
+  }
+  to {
+    transform: translate(64vw, -3000px);
+  }
+}
+
+.circle16 {
+  position: relative;
+  bottom: 0px;
+  animation: 27s circle16-move infinite linear;
+}
+
+@keyframes circle17-move {
+  from {
+    transform: translate(68vw, 0);
+  }
+  to {
+    transform: translate(68vw, -3000px);
+  }
+}
+
+.circle17 {
+  position: relative;
+  bottom: 0px;
+  animation: 21s circle17-move infinite linear;
+}
+
+@keyframes circle18-move {
+  from {
+    transform: translate(72vw, 0);
+  }
+  to {
+    transform: translate(72vw, -3000px);
+  }
+}
+
+.circle18 {
+  position: relative;
+  bottom: 0px;
+  animation: 30s circle18-move infinite linear;
 }
 
 /* below sets adjustments for screens <500px */
@@ -442,23 +700,6 @@ div.hidden {
   .profile-picture {
     width: 150px;
   }
-
-  .animated-pics {
-    width: 200px;
-    margin: auto;
-  }
-
-  .sun {
-    width: 50px;
-  }
-
-  .cloud {
-    width: 50px;
-  }
-
-  .mountain {
-    width: 200px;
-  }
 }
 
 /* below sets adjustments for screens 500-800px */
@@ -504,23 +745,6 @@ div.hidden {
 
   .profile-picture {
     width: 225px;
-  }
-
-  .animated-pics {
-    width: 400px;
-    margin: auto;
-  }
-
-  .sun {
-    width: 100px;
-  }
-
-  .cloud {
-    width: 100px;
-  }
-
-  .mountain {
-    width: 400px;
   }
 }
 
