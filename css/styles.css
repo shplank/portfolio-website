@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Literata", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -35,13 +35,13 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.7;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.6;
 }
@@ -51,7 +51,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Literata", serif;
 }
 
 a:visited {
@@ -103,7 +103,7 @@ button:focus,
 
 .sidenav {
   position: fixed;
-  margin: 20px 40px;
+  margin: 20px 32px;
   display: flex;
   flex-direction: column;
 }
@@ -130,23 +130,31 @@ button:focus,
   text-decoration: none;
 }
 
-.navbtntxt {
+.mywork {
   color: #fff;
-  margin: auto;
+  margin: 6px auto 10px;
+}
+
+.aboutme {
+  color: #fff;
+  margin: 8px auto;
 }
 
 #navbtn:hover,
-.navbtntxt:hover {
+.mywork:hover,
+.aboutme:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }
 
-a.navbtntxt {
+a.mywork,
+a.aboutme {
   color: var(--primary-color);
   text-decoration: none;
 }
 
-a.navbtntxt:visited {
+a.mywork:visited,
+a.aboutme:visited {
   color: var(--primary-color);
   text-decoration: none;
 }
@@ -160,7 +168,7 @@ a.navbtntxt:visited {
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-color);
-  z-index: 10;
+  z-index: 4;
 }
 
 .links-list {
@@ -211,11 +219,11 @@ ul {
 #modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%;
+  height: 100%;
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
@@ -316,19 +324,24 @@ div.hidden {
 #hidden-click {
   display: none;
   position: absolute;
-  top: 50px;
-  left: 50px;
-  width: 200px;
-  height: 200px;
-  padding-top: 8px;
+  top: 20px;
+  left: 20px;
+  width: 260px;
+  height: 260px;
+  padding: 8px 12px;
   color: var(--primary-color);
   background-color: #fff;
-  border: 2px solid var(--dark-grey);
+  border: 8px solid var(--goldenrod);
   border-radius: 50%;
   z-index: 8;
 }
 
+.hidden-click-text1 {
+  font-size: 24px;
+}
+
 .hidden-click-text2 {
+  font-size: 16px;
   color: var(--quaternary-color);
 }
 
@@ -420,7 +433,7 @@ div.hidden {
   border-radius: 12px;
   border-color: var(--goldenrod);
   width: 440px;
-  height: 266px;
+  height: 260px;
   padding: 8px;
   text-align: center;
   grid-column: 1 / span 2;
@@ -438,15 +451,16 @@ div.hidden {
   text-align: left;
 }
 
-#frontback {
-  padding-left: 28px;
-  padding-right: 28px;
+#frontend,
+#backend {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .case-study {
   margin: 40px auto;
   width: 360px;
-  height: 266px;
+  height: 260px;
   color: var(--primary-color);
   border-style: solid;
   border-width: 8px;
@@ -494,6 +508,10 @@ div.hidden {
     margin: 0 auto;
   }
 
+  h2 {
+    font-size: 20px;
+  }
+
   .sidenav {
     position: fixed;
     flex-direction: row;
@@ -512,7 +530,8 @@ div.hidden {
     margin: 0 8px;
   }
 
-  .navbtntxt {
+  .mywork,
+  .aboutme {
     width: 36px;
   }
 
@@ -548,6 +567,10 @@ div.hidden {
     background-color: #d0d0d0;
   }
 
+  #form-content {
+    margin: 25% auto;
+  }
+
   #home {
     margin-bottom: 250px;
   }
@@ -559,6 +582,10 @@ div.hidden {
 
   #work {
     padding: 80px 10px;
+  }
+
+  .worksub {
+    font-size: 18px;
   }
 
   .projects {
@@ -575,32 +602,33 @@ div.hidden {
   }
 
   #hidden-click {
-    width: 140px;
-    height: 140px;
-    top: 5px;
-    left: 5px;
-    padding-top: 24px;
+    width: 142px;
+    height: 142px;
+    top: 4px;
+    left: 4px;
+    border: 6px solid var(--goldenrod);
+    padding-top: 12px;
   }
 
   .hidden-click-text1 {
     padding: 0 auto;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: small;
     line-height: 1.2;
   }
 
   .hidden-click-text2 {
     padding: 0 auto;
     margin: 0 auto;
-    font-size: 15px;
+    font-size: x-small;
     line-height: 1.2;
   }
 
   #project-link {
     padding: 0 auto;
     margin: 0 auto;
-    font-size: 14px;
-    line-height: 1;
+    font-size: x-small;
+    line-height: 0.8;
   }
 
   #about {
@@ -644,10 +672,16 @@ div.hidden {
     font-size: large;
   }
 
-  #frontback {
+  #frontend {
     font-size: 14px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 6px;
+    padding-right: 4px;
+  }
+
+  #backend {
+    font-size: 14px;
+    padding-left: 4px;
+    padding-right: 2px;
   }
 
   .resume-button {
@@ -658,6 +692,10 @@ div.hidden {
 /* below sets adjustments for screens 600-950px */
 
 @media all and (min-width: 600px) and (max-width: 950px) {
+  h2 {
+    font-size: 20px;
+  }
+
   .sidenav {
     position: fixed;
     margin: 20px;
@@ -761,10 +799,16 @@ div.hidden {
     height: 250px;
   }
 
-  #frontback {
-    font-size: 15px;
-    padding-left: 16px;
-    padding-right: 16px;
+  #frontend {
+    font-size: 14px;
+    padding-left: 6px;
+    padding-right: 4px;
+  }
+
+  #backend {
+    font-size: 14px;
+    padding-left: 4px;
+    padding-right: 2px;
   }
 
   .resume-button {
@@ -833,7 +877,8 @@ div.hidden {
     grid-row: 4;
   }
 
-  #frontback {
+  #frontend,
+  #backend {
     font-size: 15px;
     padding-left: 16px;
     padding-right: 16px;

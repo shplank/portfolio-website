@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Literata:wght@500;700;800&family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
 </head>
 
 <!-- Below is everything that will appear on the home page -->
@@ -24,12 +24,12 @@
       </a>
       <button id="navbtn" class="animate__animated animate__rollIn">
         <a href="#work" role="menuitem" class="navlink">
-          <p class="navbtntxt"><b>my<br>work</b></p>
+          <p class="mywork"><b>my<br>work</b></p>
         </a>
       </button>
       <button id="navbtn" class="animate__animated animate__rollIn">
         <a href="#about" role="menuitem" class="navlink">
-          <p class="navbtntxt"><b>about<br>me</b></p>
+          <p class="aboutme"><b>about<br>me</b></p>
         </a>
       </button>
     </nav>
@@ -38,7 +38,7 @@
   <footer>
     <div class="connect">
       <ul class="links-list" role="menubar">
-        <li class="footer-item animate__animated animate__rollIn" role="presentation">
+        <li class="footer-item animate__animated animate__rollIn" role="presentation" aria-label="linkedin link">
           <a href="https://www.linkedin.com/in/lankyjoe/" target="_blank" aria-label="linkedin link" class="LinkedIn">
             <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 50 50" version="1.1" viewbox="0 0 50 50" xml:space="preserve">
               <g id="in">
@@ -50,7 +50,7 @@
             </svg>
           </a>
         </li>
-        <li class="footer-item animate__animated animate__rollIn" role="presentation">
+        <li class="footer-item animate__animated animate__rollIn" role="presentation" aria-label="github link">
           <a href="https://github.com/shplank" target="_blank" aria-label="github link" class="Github">
             <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 50 50" version="1.1" viewbox="0 0 50 50" xml:space="preserve">
               <path d="M30.4,40h-4h-4c0,0,0-2.4,0-4c-5.5,1.2-7-3-7-3c-1-2-2-3-2-3c-2-1.2,0-1,0-1c2,0,3,2,3,2  c1.8,3,4.9,2.5,6,2c0-1,0.4-2.5,1-3c-4.4-0.5-8-3-8-8s1-6,2-7c-0.2-0.5-1-2.3,0-5c0,0,2,0,4,3c1-1,4-1,5-1c1,0,4,0,5,1c2-3,4-3,4-3  c1.1,2.7,0.2,4.5,0,5c1,1,2,2,2,7s-3.6,7.5-8,8c0.6,0.5,1,2.2,1,3L30.4,40L30.4,40z" fill="#222222" id="Cat_2_" />
@@ -58,7 +58,7 @@
             </svg>
           </a>
         </li>
-        <li class="footer-item animate__animated animate__rollIn" role="presentation">
+        <li class="footer-item animate__animated animate__rollIn" role="presentation" aria-label="twitter link">
           <a href="https://twitter.com/lankyjoe" target="_blank" aria-label="twitter link" class="Twitter">
             <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 50 50" version="1.1" viewbox="0 0 50 50" xml:space="preserve">
               <path d="M39.3,16.6c-1.1,0.5-2.6,1.1-3.8,1.2c1.2-0.7,2.4-2.4,2.9-3.8c-0.9,0.6-2,1.3-3.1,1.7L34.6,15  c-1.1-1.1-2.1-1.9-3.8-1.9c-3.3,0-5.7,2.5-5.7,5.7c0,0.4,0,0.7,0.1,0.9l-0.1,0c-5.7,0-9.5-1.2-12.4-4.8c-0.5,0.9-1,1.8-1,2.9  c0,2,1.3,3.7,2.9,4.8c-1,0-2.1-0.5-2.9-1c0,2.9,4,6.2,6.7,6.7c-1,1-4.4,0.1-4.8,0c0.8,2.3,3.2,3.8,5.7,3.8c-2,1.6-4.4,2.4-7.2,2.4  c-0.5,0-0.9,0-1.4-0.1c2.6,1.7,6.2,2.5,9.6,2.5c10.8,0,16.3-8.5,16.3-16.3c0-0.3,0-0.7,0-1C37.6,18.9,38.6,17.8,39.3,16.6z" fill="#222222" id="Brid_1_" />
@@ -66,7 +66,7 @@
             </svg>
           </a>
         </li>
-        <li class="footer-item animate__animated animate__rollIn" role="presentation">
+<!--        <li class="footer-item animate__animated animate__rollIn" role="presentation" aria-label="medium link">
           <a href="https://medium.com/@lankyjoe" target="_blank" aria-label="medium link" class="Medium">
             <svg width="30px" height="30px" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.000000 30.000000" preserveAspectRatio="xMidYMid meet">
               <g transform="translate(0.000000,30.000000) scale(0.005859,-0.005859)" fill="#222222" stroke="none">
@@ -75,7 +75,7 @@
               </g>
             </svg>
           </a>
-        </li>
+        </li> -->
       </ul>
       <button type="button" id="contact-button" class="animate__animated animate__fadeInLeft" aria-label="contact form button">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="40" height="40" viewBox="0 0 256 256" xml:space="preserve">
@@ -124,13 +124,13 @@
 
     <div id="work">
       <h1>my work</h1>
-      <h2>check out these projects I've created:</h2>
+      <h2 class="worksub">check out these projects I've created:</h2>
       <div class="projects">
         <div class="projects-item">
           <img src="img/cow-login.png" class="project-image" alt="Mooovies app login page" width="300" height="300">
-            <div id="hidden-click">
+            <div id="hidden-click" class="animate__animated animate__rotateIn">
               <h2 class="hidden-click-text1">Mooovies</h2>
-              <h3 class="hidden-click-text2">Angular, MongoDB</h3>
+              <h3 class="hidden-click-text2">film catalog app made with Angular, MongoDB, Express, and Node.js</h3>
               <a href="https://github.com/shplank/Mooovies-Angular" target="_blank" id="project-link">details on GitHub</a>
               <br>
               <a href="https://shplank.github.io/Mooovies-Angular/" target="_blank" id="project-link">visit app</a>
@@ -138,9 +138,9 @@
         </div>
         <div class="projects-item">
           <img src="img/meetshot.png" class="project-image" alt="photo of Meet App" width="300" height="300">
-            <div id="hidden-click">
+            <div id="hidden-click" class="animate__animated animate__rotateIn">
               <h2 class="hidden-click-text1">MEET</h2>
-              <h3 class="hidden-click-text2">React</h3>
+              <h3 class="hidden-click-text2">meetup app made with React</h3>
               <a href="https://github.com/shplank/meet" target="_blank" id="project-link">details on GitHub</a>
               <br>
               <a href="https://shplank.github.io/meet/" target="_blank" id="project-link">visit app</a>
@@ -148,9 +148,9 @@
         </div>
         <div class="projects-item">
           <img src="img/pokedex.png" class="project-image" alt="photo of CataMon app" width="300" height="300">
-            <div id="hidden-click">
+            <div id="hidden-click" class="animate__animated animate__rotateIn">
               <h2 class="hidden-click-text1">CataMon</h2>
-              <h3 class="hidden-click-text2">JavaScript</h3>
+              <h3 class="hidden-click-text2">pokédex app made with JavaScript</h3>
               <a href="https://github.com/shplank/CataMon" target="_blank" id="project-link">details on GitHub</a>
               <br>
               <a href="https://shplank.github.io/CataMon/" target="_blank" id="project-link">visit app</a>
@@ -158,9 +158,9 @@
         </div>
         <div class="projects-item">
           <img src="img/react-mooovies.png" class="project-image" alt="photo of Mooovies app" width="300" height="300">
-            <div id="hidden-click">
+            <div id="hidden-click" class="animate__animated animate__rotateIn">
               <h2 class="hidden-click-text1">Mooovies</h2>
-              <h3 class="hidden-click-text2">React, MongoDB</h3>
+              <h3 class="hidden-click-text2">film catalogue app made with React, MongoDB, Express, and Node.js</h3>
               <a href="https://github.com/shplank/Mooovies-client" target="_blank" id="project-link">details on GitHub</a>
               <br>
               <a href="https://moooviesapp.netlify.app/" target="_blank" id="project-link">visit app</a>
@@ -168,17 +168,17 @@
         </div>
         <div class="projects-item">
           <img src="img/confabsquare.png" class="project-image" alt="photo of confab app" width="300" height="300">
-            <div id="hidden-click">
+            <div id="hidden-click" class="animate__animated animate__rotateIn">
               <h2 class="hidden-click-text1">confab</h2>
-              <h3 class="hidden-click-text2">React Native</h3>
+              <h3 class="hidden-click-text2">chat app made with React Native and Gifted Chat</h3>
               <a href="https://github.com/shplank/confab" target="_blank" id="project-link">details on GitHub</a>
             </div>
         </div>
         <div class="projects-item">
           <img src="img/MoJoHoJo.png" class="project-image" alt="photo of mojohojo wedding site" width="300" height="300">
-            <div id="hidden-click">
+            <div id="hidden-click" class="animate__animated animate__rotateIn">
               <h2 class="hidden-click-text1">MoJoHoJo</h2>
-              <h3 class="hidden-click-text2">HTML, CSS</h3>
+              <h3 class="hidden-click-text2">wedding website made with HTML & CSS</h3>
               <a href="https://github.com/shplank/mojo" target="_blank" id="project-link">details on GitHub</a>
               <br>
               <a href="https://shplank.github.io/mojo/" target="_blank" id="project-link">visit site</a>
@@ -207,17 +207,17 @@
           <h2 class="tech-title">technologies I've been using</h2>
           <div class="tech-list">
             <div>
-              <ul id="frontback">
+              <ul id="frontend">
                 <li><b>Frontend:</b></li>
                 <li>HTML5, CSS3, Sass</li>
                 <li>JavaScript ES6, TypeScript</li>
                 <li>React, Angular</li>
                 <li>React Native</li>
-                <li>Bootstrap, Angular Material</li>
+                <li>Bootstrap, Material Design</li>
               </ul>
             </div>
             <div>
-              <ul id="frontback">
+              <ul id="backend">
                 <li><b>Backend:</b></li>
                 <li>npm, Node.js</li>
                 <li>Express</li>
@@ -241,6 +241,6 @@
   </main>
 
 </body>
-<script src="js/tota11y.min.js"></script>
+<!-- <script src="js/tota11y.min.js"></script> -->
 <script src="js/scripts.js"></script>
 </html>
