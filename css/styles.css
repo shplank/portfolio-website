@@ -3,8 +3,8 @@ Colors used
 */
 
 :root {
-  --primary-color: #000;
-  --secondary-color: #eee;
+  --primary-color: #222;
+  --secondary-color: #f3f3f3;
   --tertiary-color: #235fac;
   --quaternary-color: #008099;
   --dark-grey: #707070;
@@ -186,7 +186,7 @@ a.aboutme:visited {
 }
 
 svg:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .message {
